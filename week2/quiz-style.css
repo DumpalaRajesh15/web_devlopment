@@ -1,0 +1,27 @@
+#div1{
+height:250px;
+width:350px;
+border:2px solid black;
+margin:50px auto;
+padding:20px 10px;
+display:flex;
+flex-direction:column;
+align-items:center;
+line-height:30px;
+}
+#heading{
+height:35px;
+width:170px;
+border:2px solid black;
+text-align:center;
+justify-content:center;
+display:flex;
+align-items:center;
+font-size:15px;
+}
+*{
+    background-color:darkcyan;
+}
+#stButton{
+    justify-content:center;
+}

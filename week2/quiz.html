@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quizz App</title>
+        <link rel="stylesheet" href="quiz-style.css">
+    </head>
+    <body>
+        <div id="div1">
+            <div id="heading">
+                <h2>Quiz Master</h2>
+            </div>
+            <p>Test your Knowledge</p>
+                <label for="category">Category:</label>
+            <select id="category"class="category">
+                <option name="skills" value="html">Html</option>
+                <option name="skills" value="css">Css</option>
+                <option name="skills" value="javascript">Javascript</option>
+                <option name="skills" value="python">Python</option>
+                <option name="skills" value="mysql">MYSQl</option>
+            </select>
+            <form action="submit.php">
+                <div class="Difficulty">Difficulty:
+                    <br>
+                    <input type="radio" name="level">Easy
+                    <input type="radio" name="level">Medium
+                    <input type="radio" name="level">Hard
+                </div>
+                <button id="stbutton">Start Quiz</button>
+                
+            </form>
+        </div>
+            <script src="quiz.js"></script>
+
+            </body>
+    </html>
