@@ -1,0 +1,102 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 15px;
+}
+
+.card {
+  width: 100%;
+  max-width: 450px;
+  padding: 30px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px #0003;
+}
+
+h1 {
+  margin: 0;
+  color: #6655dd;
+}
+
+.subtitle {
+  color: #777;
+}
+
+h3 {
+  color: #333;
+}
+
+.input-box {
+  display: flex;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline-color: #6655dd;
+}
+
+button {
+  padding: 11px 15px;
+  color: white;
+  background: #6655dd;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 12px;
+  background: #f3f2ff;
+  border-radius: 9px;
+}
+
+.task span {
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.delete {
+  background: #ff5364;
+  flex-shrink: 0;
+}
+
+.empty {
+  padding: 15px 0;
+  color: #888;
+  text-align: center;
+}
