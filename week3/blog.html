@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBlog - Home</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .featured {
+            background: #e9ecef;
+            padding: 50px 20px;
+            border-radius: 12px;
+        }
+
+        .blog-card {
+            transition: 0.3s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        footer {
+            background: #212529;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">MyBlog</a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#blogs">Blogs</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Featured Section -->
+<div class="container my-5">
+    <div class="featured text-center">
+        <h1 class="display-5 fw-bold">Welcome to MyBlog</h1>
+        <p class="lead">Discover interesting articles, ideas and stories.</p>
+        <a href="#blogs" class="btn btn-primary btn-lg">Explore Blogs</a>
+    </div>
+</div>
+
+<!-- Blog Section -->
+<div class="container my-5" id="blogs">
+    <h2 class="text-center mb-4">Latest Blog Posts</h2>
+
+    <div class="row g-4">
+
+        <!-- Blog Cards -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card blog-card shadow-sm h-100">
+                <img src="https://picsum.photos/id/180/600/400" class="card-img-top" alt="Technology">
+                <div class="card-body">
+                    <span class="badge bg-primary">Technology</span>
+                    <h5 class="card-title mt-2">Future of Technology</h5>
+                    <p class="card-text">Explore how modern technology is changing our daily lives.</p>
+                    <a href="#" class="btn btn-outline-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="card blog-card shadow-sm h-100">
+                <img src="https://picsum.photos/id/20/600/400" class="card-img-top" alt="Programming">
+                <div class="card-body">
+                    <span class="badge bg-success">Programming</span>
+                    <h5 class="card-title mt-2">Learn Web Development</h5>
+                    <p class="card-text">Start your journey into HTML, CSS, JavaScript and Bootstrap.</p>
+                    <a href="#" class="btn btn-outline-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="card blog-card shadow-sm h-100">
+                <img src="https://picsum.photos/id/48/600/400" class="card-img-top" alt="Lifestyle">
+                <div class="card-body">
+                    <span class="badge bg-warning text-dark">Lifestyle</span>
+                    <h5 class="card-title mt-2">Healthy Lifestyle</h5>
+                    <p class="card-text">Simple habits that help you live a healthier and happier life.</p>
+                    <a href="#" class="btn btn-outline-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- About Section -->
+<div class="container my-5" id="about">
+    <div class="text-center p-4 bg-white shadow-sm rounded">
+        <h2>About MyBlog</h2>
+        <p>MyBlog is a platform where we share knowledge, ideas and useful information.</p>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<div class="container my-5" id="contact">
+    <h2 class="text-center mb-4">Contact Us</h2>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form>
+                <input type="text" class="form-control mb-3" placeholder="Your Name">
+                <input type="email" class="form-control mb-3" placeholder="Your Email">
+                <textarea class="form-control mb-3" rows="4" placeholder="Your Message"></textarea>
+                <button type="button" class="btn btn-primary w-100">Send Message</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center py-4">
+    <p class="mb-0">&copy; 2026 MyBlog. All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
