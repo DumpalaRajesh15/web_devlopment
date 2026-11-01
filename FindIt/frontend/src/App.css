@@ -1,0 +1,345 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+  color: #222;
+}
+
+.app {
+  width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  background: #172554;
+  color: white;
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h2 span {
+  color: #60a5fa;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(120deg, #1e3a8a, #3b82f6);
+  color: white;
+  text-align: center;
+  padding: 85px 20px;
+}
+
+.hero h1 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  margin-bottom: 30px;
+  font-size: 17px;
+}
+
+.hero-btn {
+  display: inline-block;
+  background: white;
+  color: #1e40af;
+  padding: 13px 25px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-btn:hover {
+  background: #dbeafe;
+}
+
+/* Dashboard Statistics */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  max-width: 950px;
+  margin: 35px auto;
+  padding: 0 15px;
+}
+
+.stats div {
+  background: white;
+  padding: 22px 35px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 3px 12px #00000010;
+  flex: 1;
+  min-width: 160px;
+}
+
+.stats h2 {
+  color: #2563eb;
+  font-size: 30px;
+}
+
+.stats p {
+  margin-top: 8px;
+  color: #555;
+}
+
+/* Report Form */
+.report,
+.listings {
+  max-width: 950px;
+  margin: 45px auto;
+  padding: 25px;
+}
+
+.report h2,
+.listings h2 {
+  text-align: center;
+  color: #172554;
+  margin-bottom: 25px;
+  font-size: 27px;
+}
+
+form {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  display: grid;
+  gap: 15px;
+  box-shadow: 0 3px 12px #00000010;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+form button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: #1d4ed8;
+}
+
+/* Search */
+.search {
+  margin-bottom: 20px;
+}
+
+/* Lost and Found Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.tabs button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 7px;
+  background: #dbeafe;
+  color: #1e40af;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.tabs button.active {
+  background: #2563eb;
+  color: white;
+}
+
+/* Item Cards */
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 22px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px #00000012;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 18px;
+}
+
+.card-content h3 {
+  margin: 12px 0;
+  color: #172554;
+  font-size: 20px;
+}
+
+.card-content p {
+  margin: 9px 0;
+  color: #555;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+/* Lost and Found Labels */
+.lost,
+.found {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.lost {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.found {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+/* Active and Returned Status */
+.active-status,
+.returned {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.active-status {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.returned {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+/* Returned Button */
+.return-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  background: #15803d;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.return-btn:hover {
+  background: #166534;
+}
+
+/* Footer */
+footer {
+  background: #172554;
+  color: white;
+  text-align: center;
+  padding: 22px;
+  margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 16px 5%;
+  }
+
+  .hero {
+    padding: 65px 15px;
+  }
+
+  .hero h1 {
+    font-size: 27px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .report,
+  .listings {
+    margin: 25px auto;
+    padding: 15px;
+  }
+
+  .stats {
+    gap: 10px;
+  }
+
+  .stats div {
+    padding: 15px;
+  }
+
+  .tabs button {
+    padding: 10px 18px;
+  }
+
+  .items {
+    grid-template-columns: 1fr;
+  }
+}
